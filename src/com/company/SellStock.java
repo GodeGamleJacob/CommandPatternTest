@@ -2,13 +2,13 @@ package com.company;
 
 //Concrete classes, implementing the interface in Order
 public class SellStock implements Order {
-    private Stock firstStock;
+    private Stock myStock;
 
-    public SellStock(Stock firstStock) {
-        this.firstStock = firstStock;
+    public SellStock(Stock myStock) {
+        this.myStock = myStock;
     }
 
     public void execute() {
-        firstStock.sell();
+        myStock.sell();
     }
 }
